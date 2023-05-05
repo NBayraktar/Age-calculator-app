@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: hsl(0, 0%, 86%);
+  height: 100vh;
+}
+
+/* Footer */
+.attribution {
+  width: 99%;
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 1em;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
