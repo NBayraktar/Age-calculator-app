@@ -10,6 +10,13 @@ body {
   height: 100vh;
 }
 
+.container {
+  width: 375px;
+  background: hsl(0, 0%, 94%);
+  margin: 10em auto;
+  border-radius: 25px 25px 100px 25px;
+}
+
 /* Footer */
 .attribution {
   width: 99%;

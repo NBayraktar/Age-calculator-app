@@ -26,7 +26,45 @@
     <title>Frontend Mentor | Age calculator app</title>
   </head>
   <body>
-    Day DD Month MM Year YYYY -- years -- months -- days
+    <main class="container">
+      <form action="#">
+        <div class="form-wraper">
+          <div class="input-wraper">
+            <label for="day">day</label>
+            <input type="number" name="day" id="day" placeholder="DD" />
+            <div id="valid-day" class="validation-text"></div>
+          </div>
+
+          <div class="input-wraper">
+            <label for="month">month</label>
+            <input type="number" name="month" id="month" placeholder="MM" />
+            <div id="valid-month" class="validation-text"></div>
+          </div>
+
+          <div class="input-wraper">
+            <label for="year">year</label>
+            <input type="number" name="year" id="year" placeholder="YYYY" />
+            <div id="valid-year" class="validation-text"></div>
+          </div>
+        </div>
+
+        <div class="btn-wraper">
+          <hr />
+          <button type="submit" id="btn-submit" class="btn-submit">
+            <img
+              src="images/icon-arrow.svg"
+              class="arrow-img"
+              alt="arrow pointing down icon"
+            />
+          </button>
+        </div>
+      </form>
+      <div class="results">
+        <h1><span class="years">--</span>years</h1>
+        <h1><span class="months">--</span>months</h1>
+        <h1><span class="days">--</span>days</h1>
+      </div>
+    </main>
 
     <footer class="attribution">
       Challenge by
