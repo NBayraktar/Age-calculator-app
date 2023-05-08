@@ -10,11 +10,111 @@ body {
   height: 100vh;
 }
 
+/* Typography */
+h1 {
+  font-size: 3.7rem;
+  font-style: italic;
+  font-weight: 800;
+  color: hsl(0, 0%, 8%);
+  line-height: 1em;
+}
+
+.span {
+  color: hsl(259, 100%, 65%);
+}
+
+.validation-text {
+  color: hsl(0, 100%, 67%);
+  margin-top: 0.8em;
+  font-size: 0.5rem;
+  font-style: italic;
+  font-weight: 400;
+  display: none;
+}
+
+/* Layout */
+label {
+  color: hsl(0, 1%, 44%);
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 0.4em;
+}
+
 .container {
   width: 375px;
   background: hsl(0, 0%, 94%);
   margin: 10em auto;
-  border-radius: 25px 25px 100px 25px;
+  padding: 3em 1.5em;
+  border-radius: 18px 18px 120px 18px;
+}
+
+.form-wraper,
+.input-wraper {
+  display: flex;
+}
+
+.form-wraper {
+  justify-content: space-between;
+}
+
+.input-wraper {
+  flex-direction: column;
+}
+
+.input {
+  width: 6rem;
+  padding: 0.4em 0 0.4em 0.7em;
+  border: 1.2px solid hsl(0, 0%, 86%);
+  outline: none;
+  background: hsl(0, 0%, 94%);
+  color: hsl(0, 0%, 8%);
+  border-radius: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.input:hover,
+.input:focus {
+  border: 1.2px solid hsl(259, 100%, 65%);
+  cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Button */
+.btn-wraper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em 0;
+}
+
+.arrow-img {
+  width: 60px;
+  padding: 18px;
+  background: hsl(259, 100%, 65%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.arrow-img:hover {
+  background: hsl(0, 0%, 8%);
+  cursor: pointer;
+}
+
+.line {
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  height: 1.5px;
+  background-color: hsl(0, 0%, 86%);
 }
 
 /* Footer */
@@ -27,4 +127,21 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* Media Queries */
+@media (min-width: 600px) {
+  .container {
+    width: 510px;
+    padding: 2em;
+  }
+
+  .btn-wraper {
+    align-items: flex-end;
+  }
+
+  .form-wraper {
+    justify-content: flex-start;
+    gap: 1.1em;
+  }
 }

@@ -31,38 +31,56 @@
         <div class="form-wraper">
           <div class="input-wraper">
             <label for="day">day</label>
-            <input type="number" name="day" id="day" placeholder="DD" />
+            <input
+              type="number"
+              name="day"
+              id="day"
+              class="input"
+              placeholder="DD"
+            />
             <div id="valid-day" class="validation-text"></div>
           </div>
 
           <div class="input-wraper">
             <label for="month">month</label>
-            <input type="number" name="month" id="month" placeholder="MM" />
+            <input
+              type="number"
+              name="month"
+              id="month"
+              class="input"
+              placeholder="MM"
+            />
             <div id="valid-month" class="validation-text"></div>
           </div>
 
           <div class="input-wraper">
             <label for="year">year</label>
-            <input type="number" name="year" id="year" placeholder="YYYY" />
+            <input
+              type="number"
+              name="year"
+              id="year"
+              class="input"
+              placeholder="YYYY"
+            />
             <div id="valid-year" class="validation-text"></div>
           </div>
         </div>
 
         <div class="btn-wraper">
-          <hr />
-          <button type="submit" id="btn-submit" class="btn-submit">
-            <img
-              src="images/icon-arrow.svg"
-              class="arrow-img"
-              alt="arrow pointing down icon"
-            />
-          </button>
+          <div class="line"></div>
+
+          <img
+            src="images/icon-arrow.svg"
+            class="arrow-img"
+            id="btn-submit"
+            alt="arrow pointing down icon"
+          />
         </div>
       </form>
       <div class="results">
-        <h1><span class="years">--</span>years</h1>
-        <h1><span class="months">--</span>months</h1>
-        <h1><span class="days">--</span>days</h1>
+        <h1><span class="span years">--</span> years</h1>
+        <h1><span class="span months">--</span> months</h1>
+        <h1><span class="span days">--</span> days</h1>
       </div>
     </main>
 
@@ -72,5 +90,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Nazim Bayraktar</a>.
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
